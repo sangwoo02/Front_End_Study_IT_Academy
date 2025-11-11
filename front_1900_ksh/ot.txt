@@ -22,3 +22,16 @@
 
 퍼블리셔 - 웹 디자인 ㄷㄷ
 
+<<<<<<< HEAD
+=======
+
+=====
+visual code 환경 구성
+
+
+1. korean
+2. material icon
+3. Live server
+4. Auto Rename Tag
+5. theme
+>>>>>>> 75a1cc9 (2025-11-11{2})
