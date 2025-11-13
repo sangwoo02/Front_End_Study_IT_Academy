@@ -35,3 +35,9 @@ visual code 환경 구성
 4. Auto Rename Tag
 5. theme
 >>>>>>> 75a1cc9 (2025-11-11{2})
+
+
+alt + L + O 동시에 누르면 라이브가 뜸
+
+
+
