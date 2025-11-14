@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭 이벤트(유효성 검사)</title>
+    <style>
+        .label {
+            display:block
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">
+            <span>아이디</span><input type="text" placeholder="아이디를입력하세요." name="id">
+
+        </label>
+        <p id="id-result"></p>>
+        <lable>
+            <span>비밀번호</span><input type="password" placeholder = "password" name="password">
+
+        </lable>
+        <p id="password-result"></p>>
+        <button type ="button">로그인</button>
+
+    </form>
+</body>
+<script>
+    const button = document.querySelector("button");
+    const id = document.querySelector("input[name='id']");
+    const password = document.querySelector("input[name= 'password']");
+    const idResult = document.querySelector("#id-result")
+    const pawsswordResult = document.querySelector("#password-result")
+    console.log(button);
+    console.log(id);
+    console.log(password);
+
+    button.addEventListener("click", (e) => {
+        if(!id.value){
+            idResult.innerText = "아이디를 입력하세요."
+            idResult.style.color = "red"
+            return;
+        }
+
+        idResult.innerText = "멋진 아이디네요~!😊"
+        idResult.style.color = "blue"
+        console.log(password.value)
+
+        if(!password.value){
+            pawsswordResult.innerText = "비밀번호를 입력하세요."
+            pawsswordResult.style.color ="red"
+        }
+        pawsswordResult.innerText = "잘 적었습니다!"
+        pawsswordResult.style.color ="blue"
+        
+    })
+
+</script>
+</html>
